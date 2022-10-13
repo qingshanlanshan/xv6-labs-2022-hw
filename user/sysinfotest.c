@@ -10,6 +10,7 @@ sinfo(struct sysinfo *info) {
     printf("FAIL: sysinfo failed");
     exit(1);
   }
+  printf("my student number is %s\n",info->id);
 }
 
 //
