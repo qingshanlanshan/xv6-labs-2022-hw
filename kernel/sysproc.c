@@ -122,6 +122,6 @@ sys_sysinfo(void)
   strncpy(info.id,"20307130048",12);
   if (copyout(myproc()->pagetable, addr, (char *)&info, sizeof(info)))
     return -1;
-  // printf("my student number is %s\n",info.id);
+  printf("my student number is %s\n",info.id);
   return 0;
 }

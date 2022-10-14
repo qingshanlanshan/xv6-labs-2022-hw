@@ -3,14 +3,12 @@
 #include "kernel/sysinfo.h"
 #include "user/user.h"
 
-
 void
 sinfo(struct sysinfo *info) {
   if (sysinfo(info) < 0) {
     printf("FAIL: sysinfo failed");
     exit(1);
   }
-  printf("my student number is %s\n",info->id);
 }
 
 //
